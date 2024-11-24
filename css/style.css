@@ -357,10 +357,12 @@ h4 {
 }
 
 .navbar .navbar-logo {
-  font-size: 5rem;
+  font-size: 3rem;
   font-weight: 600;
   text-decoration: none;
   color: white;
+  display: flex;
+  align-items: center;
 }
 
 .navbar .nav-list-expand {
@@ -386,4 +388,10 @@ h4 {
   color: var(--blueitp);
   border-radius: 2px;
   transform: translateY(1px);
+}
+
+.navbar .nav-icon {
+  width: 4rem;
+  height: auto;
+  margin-right: 1.5rem;
 }
