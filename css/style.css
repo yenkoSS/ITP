@@ -119,6 +119,11 @@ h3 {
   color: var(--greytext);
 }
 
+.heading3-bold {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
 p {
   font-size: 1.6rem;
   color: white;
@@ -394,4 +399,66 @@ h4 {
   width: 4rem;
   height: auto;
   margin-right: 1.5rem;
+}
+
+footer {
+  padding: 4rem 0;
+}
+
+.footer-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-footer {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--blueitp);
+}
+
+.logo-icon-footer {
+  width: 4rem;
+  height: auto;
+  margin-right: 2rem;
+}
+
+.nav-footer-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-footer-list .nav-footer-item {
+  text-decoration: none;
+  color: var(--blueitp);
+  font-size: 1.6rem;
+}
+
+.contact-box {
+  padding: 2rem;
+  background-color: var(--blueitp);
+  border-radius: 0.5rem;
+}
+
+.contact-box .number-box {
+  padding: 2rem;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-divider {
+  content: "";
+  height: inherit;
+  width: 1px;
+  background-color: #32364354;
+  display: block;
 }
