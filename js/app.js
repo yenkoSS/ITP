@@ -4,6 +4,14 @@ const smallMenu = document.querySelector(".nav-list-small");
 const btnCloseMenu = document.querySelector(".icon-close");
 const btnOpenMenu = document.querySelector(".icon-menu");
 const navSmallItems = document.querySelectorAll(".nav-item-small");
+const aboutSection = document.querySelector(".section-about");
+const navbar = document.querySelector(".navbar");
+
+window.addEventListener("scroll", () => {
+  if (scrollY >= aboutSection.getBoundingClientRect().top) {
+    navbar.classList.add("navbar-scroll");
+  }
+});
 
 navSmallItems.forEach((item) =>
   item.addEventListener("click", () => {
