@@ -29,6 +29,7 @@ body {
 }
 
 header {
+  min-height: 800px;
   height: 95vh;
   background-image: url(../img/hero.jpg);
   background-size: cover;
@@ -110,6 +111,13 @@ section {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   transition: 200ms ease-in;
   border-radius: 0.8rem;
+}
+
+.text-background {
+  padding: 1rem;
+  background-color: #323643;
+  width: fit-content;
+  border-radius: 0.3rem;
 }
 
 .card-category:hover {

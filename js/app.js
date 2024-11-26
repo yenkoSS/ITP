@@ -11,6 +11,10 @@ window.addEventListener("scroll", () => {
   if (scrollY >= aboutSection.getBoundingClientRect().top) {
     navbar.classList.add("navbar-scroll");
   }
+
+  if (scrollY < aboutSection.getBoundingClientRect().top) {
+    navbar.classList.remove("navbar-scroll");
+  }
 });
 
 navSmallItems.forEach((item) =>
@@ -29,7 +33,6 @@ btnOpenMenu.addEventListener("click", () => {
 
 const rowsOberver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-    console.log(entry);
     entry.target.classList.toggle("show-row", entry.isIntersecting);
     if (entry.isIntersecting) rowsOberver.unobserve(entry.target);
   });
